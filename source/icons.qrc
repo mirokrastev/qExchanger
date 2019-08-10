@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="images">
+    <file>snimki/icons8_estimate_96_H72_icon.ico</file>
+    <file>snimki/flag-400.png</file>
+    <file>snimki/eu-flag-png-download-pngwebpjpg-600.png</file>
+    <file>snimki/1280px-Flag_of_the_United_States.svg.png</file>
+    <file>snimki/ikona.ico</file>
+    <file>snimki/btc-512.png</file>
+    <file>snimki/cryptocurrency_blockchain_crypto-02-512.png</file>
+  </qresource>
+</RCC>
