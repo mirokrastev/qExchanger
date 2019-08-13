@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
-import ccmain
+import ccmain, about
 import qdarkstyle, requests, sys
 
 
@@ -63,19 +63,17 @@ class Programa(ccmain.Ui_MainWindow, QtWidgets.QMainWindow):
             self.setFixedSize(290, 216)
 
     def about(self):
-        QtWidgets.QMessageBox.information(self, 'About qExchanger',
-                                          'qExchanger is an open sourced project, built with PyQt 5.12.1'
-                                          '<br> and licensed under '
-                                          "<a href='https://www.gnu.org/licenses/gpl-3.0.txt'>GNU GPLv3</a>"
-                                          '<br>'
-                                          '<br> The program updates itself using APIs from'
-                                          "<br> <a href='https://api.exchangeratesapi.io/latest'>exchangerates</a>"
-                                          ' and '
-                                          "<a href='https://blockchain.info/ticker'>blockchain</a>"
-                                          '<br>'
-                                          '<br>You can find this project on '
-                                          "<a href='https://github.com/Qiceto/qExchanger'>GitHub</a>"
-                                          )
+        if self.themes.isChecked():
+            self.a = AboutUi()
+            self.a.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+            self.a.setFixedSize(398, 280)
+            self.a.line.setGeometry(90, 58, 90, 8)
+            self.a.line_2.setGeometry(90, 109, 90, 8)
+            self.a.show()
+        else:
+            self.a = AboutUi()
+            self.a.setFixedSize(398, 280)
+            self.a.show()
 
     def currencies(self):
         try:
@@ -221,6 +219,18 @@ class Programa(ccmain.Ui_MainWindow, QtWidgets.QMainWindow):
             self.signals()
         except:
             self.signals()
+
+
+class AboutUi(about.Ui_Dialog, QtWidgets.QDialog):
+    def __init__(self):
+        super().__init__()
+
+        self.initUi()
+
+    def initUi(self):
+        self.setupUi(self)
+        self.setModal(True)
+        self.show()
 
 
 if __name__ == '__main__':
