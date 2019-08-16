@@ -80,17 +80,23 @@ class Programa(ccmain.Ui_MainWindow, QtWidgets.QMainWindow):
             a = str(self.firstCINP.text())
             n = float(a.replace(',', '.'))
             if self.firstC.currentIndex() == 0:
-                if self.secondC.currentIndex() == 0:
-                    params = {
-                        'symbols': {
-                            "USD",
-                            "BGN"
-                        },
-                        'base': 'EUR'
-                    }
+                params = {
+                    'symbols': {
+                        "USD",
+                        "BGN",
+                        "RUB",
+                        "HRK",
+                        "INR",
+                        "NOK",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'EUR'
+                }
 
-                    zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
-                    q = zdr.json()
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
                     c = round(n * q['rates']['USD'], 2)
                     b = format(c, ',')
                     self.secondCOUT.setText(str(b))
@@ -98,81 +104,447 @@ class Programa(ccmain.Ui_MainWindow, QtWidgets.QMainWindow):
                     b = format(n, ',')
                     self.secondCOUT.setText(str(b))
                 elif self.secondC.currentIndex() == 2:
-                    params = {
-                        'symbols': {
-                            "USD",
-                            "BGN"
-                        },
-                        'base': 'EUR'
-                    }
-
-                    zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
-                    q = zdr.json()
                     c = round(n * q['rates']['BGN'], 2)
                     b = format(c, ',')
                     self.secondCOUT.setText(str(b))
-            if self.firstC.currentIndex() == 1:
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 1:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "BGN",
+                        "RUB",
+                        "HRK",
+                        "INR",
+                        "NOK",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'USD'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
                 if self.secondC.currentIndex() == 0:
                     b = format(n, ',')
                     self.secondCOUT.setText(str(b))
                 elif self.secondC.currentIndex() == 1:
-                    params = {
-                        'symbols': {
-                            "EUR",
-                            "BGN"
-                        },
-                        'base': 'USD'
-                    }
-
-                    zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
-                    q = zdr.json()
                     c = round(n * q['rates']['EUR'], 2)
                     b = format(c, ',')
                     self.secondCOUT.setText(str(b))
                 elif self.secondC.currentIndex() == 2:
-                    params = {
-                        'symbols': {
-                            "EUR",
-                            "BGN"
-                        },
-                        'base': 'USD'
-                    }
-
-                    zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
-                    q = zdr.json()
                     c = round(n * q['rates']['BGN'], 2)
                     b = format(c, ',')
                     self.secondCOUT.setText(str(b))
-            if self.firstC.currentIndex() == 2:
-                if self.secondC.currentIndex() == 0:
-                    params = {
-                        'symbols': {
-                            "EUR",
-                            "USD"
-                        },
-                        'base': 'BGN'
-                    }
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 2:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "RUB",
+                        "HRK",
+                        "INR",
+                        "NOK",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'BGN'
+                }
 
-                    zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
-                    q = zdr.json()
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
                     c = round(n * q['rates']['USD'], 2)
                     b = format(c, ',')
                     self.secondCOUT.setText(str(b))
                 elif self.secondC.currentIndex() == 1:
-                    params = {
-                        'symbols': {
-                            "EUR",
-                            "USD"
-                        },
-                        'base': 'BGN'
-                    }
-
-                    zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
-                    q = zdr.json()
                     c = round(n * q['rates']['EUR'], 2)
                     b = format(c, ',')
                     self.secondCOUT.setText(str(b))
                 elif self.secondC.currentIndex() == 2:
+                    b = format(n, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 3:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "BGN",
+                        "HRK",
+                        "INR",
+                        "NOK",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'RUB'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
+                    c = round(n * q['rates']['USD'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 1:
+                    c = round(n * q['rates']['EUR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 2:
+                    c = round(n * q['rates']['BGN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    b = format(n, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 4:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "BGN",
+                        "RUB",
+                        "INR",
+                        "NOK",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'HRK'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
+                    c = round(n * q['rates']['USD'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 1:
+                    c = round(n * q['rates']['EUR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 2:
+                    c = round(n * q['rates']['BGN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    b = format(n, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 5:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "BGN",
+                        "RUB",
+                        "HRK",
+                        "NOK",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'INR'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
+                    c = round(n * q['rates']['USD'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 1:
+                    c = round(n * q['rates']['EUR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 2:
+                    c = round(n * q['rates']['BGN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    b = format(n, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 6:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "BGN",
+                        "RUB",
+                        "HRK",
+                        "INR",
+                        "PLN",
+                        "TRY"
+                    },
+                    'base': 'NOK'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
+                    c = round(n * q['rates']['USD'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 1:
+                    c = round(n * q['rates']['EUR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 2:
+                    c = round(n * q['rates']['BGN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    b = format(n, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 7:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "BGN",
+                        "RUB",
+                        "HRK",
+                        "INR",
+                        "NOK",
+                        "TRY"
+                    },
+                    'base': 'PLN'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
+                    c = round(n * q['rates']['USD'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 1:
+                    c = round(n * q['rates']['EUR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 2:
+                    c = round(n * q['rates']['BGN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    b = format(n, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
+                    c = round(n * q['rates']['TRY'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+            elif self.firstC.currentIndex() == 8:
+                params = {
+                    'symbols': {
+                        "EUR",
+                        "USD",
+                        "BGN",
+                        "RUB",
+                        "HRK",
+                        "INR",
+                        "NOK",
+                        "PLN"
+                    },
+                    'base': 'TRY'
+                }
+
+                zdr = requests.get('https://api.exchangeratesapi.io/latest', params)
+                q = zdr.json()
+                if self.secondC.currentIndex() == 0:
+                    c = round(n * q['rates']['USD'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 1:
+                    c = round(n * q['rates']['EUR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 2:
+                    c = round(n * q['rates']['BGM'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 3:
+                    c = round(n * q['rates']['RUB'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 4:
+                    c = round(n * q['rates']['HRK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 5:
+                    c = round(n * q['rates']['INR'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 6:
+                    c = round(n * q['rates']['NOK'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 7:
+                    c = round(n * q['rates']['PLN'], 2)
+                    b = format(c, ',')
+                    self.secondCOUT.setText(str(b))
+                elif self.secondC.currentIndex() == 8:
                     b = format(n, ',')
                     self.secondCOUT.setText(str(b))
         except requests.ConnectionError:
@@ -189,26 +561,30 @@ class Programa(ccmain.Ui_MainWindow, QtWidgets.QMainWindow):
         try:
             a = str(self.firstCINP_2.text())
             n = float(a.replace(',', '.'))
+            zdr = requests.get('https://blockchain.info/ticker')
+            q = zdr.json()
             if self.secondC_2.currentIndex() == 0:
-                zdr = requests.get('https://blockchain.info/ticker')
-                q = zdr.json()
                 c = round(n * q['USD']['last'], 2)
                 b = format(c, ',')
                 self.secondCOUT_2.setText(str(b))
             elif self.secondC_2.currentIndex() == 1:
-                zdr = requests.get('https://blockchain.info/ticker')
-                q = zdr.json()
                 c = round(n * q['EUR']['last'], 2)
                 b = format(c, ',')
                 self.secondCOUT_2.setText(str(b))
             elif self.secondC_2.currentIndex() == 2:
-                zdr = requests.get('https://blockchain.info/ticker')
-                q = zdr.json()
-                c = n * q['USD']['last']
                 hui = requests.get('https://api.exchangeratesapi.io/latest?base=USD')
                 w = hui.json()
+                c = n * q['USD']['last']
                 h = round(c * w['rates']['BGN'], 2)
                 b = format(h, ',')
+                self.secondCOUT_2.setText(str(b))
+            elif self.secondC_2.currentIndex() == 3:
+                c = round(n * q['RUB']['last'], 2)
+                b = format(c, ',')
+                self.secondCOUT_2.setText(str(b))
+            elif self.secondC_2.currentIndex() == 4:
+                c = round(n * q['INR']['last'], 2)
+                b = format(c, ',')
                 self.secondCOUT_2.setText(str(b))
         except requests.ConnectionError:
             QtWidgets.QMessageBox.critical(self, 'Connection Error',
