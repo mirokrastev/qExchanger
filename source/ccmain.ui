@@ -518,6 +518,8 @@
      <string>Help</string>
     </property>
     <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionRates"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
@@ -588,6 +590,11 @@
    </property>
    <property name="text">
     <string>Comma</string>
+   </property>
+  </action>
+  <action name="actionRates">
+   <property name="text">
+    <string>Rates</string>
    </property>
   </action>
  </widget>

@@ -212,6 +212,8 @@ class Ui_MainWindow(object):
         self.actionComma.setCheckable(False)
         self.actionComma.setChecked(False)
         self.actionComma.setObjectName("actionComma")
+        self.actionRates = QtWidgets.QAction(MainWindow)
+        self.actionRates.setObjectName("actionRates")
         self.menuSeparator.addAction(self.actiontext)
         self.menuSeparator.addSeparator()
         self.menuSeparator.addAction(self.actionDot)
@@ -223,6 +225,8 @@ class Ui_MainWindow(object):
         self.menuFile.addSeparator()
         self.menuFile.addAction(self.exit)
         self.menuHelp.addAction(self.actionAbout)
+        self.menuHelp.addSeparator()
+        self.menuHelp.addAction(self.actionRates)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuHelp.menuAction())
 
@@ -272,6 +276,7 @@ class Ui_MainWindow(object):
         self.actiontext.setText(_translate("MainWindow", "Choose a default separator"))
         self.actionDot.setText(_translate("MainWindow", "Dot"))
         self.actionComma.setText(_translate("MainWindow", "Comma"))
+        self.actionRates.setText(_translate("MainWindow", "Rates"))
 
 
 import icons_rc

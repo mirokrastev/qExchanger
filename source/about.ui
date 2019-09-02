@@ -63,7 +63,7 @@
         <x>90</x>
         <y>10</y>
         <width>260</width>
-        <height>41</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="text">
@@ -133,7 +133,7 @@ For your convenience, the program updates daily.</string>
        </rect>
       </property>
       <property name="text">
-       <string>Python 3.7.3</string>
+       <string>Python 3.7.4</string>
       </property>
      </widget>
      <widget class="QLabel" name="picute">
