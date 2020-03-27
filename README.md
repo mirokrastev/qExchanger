@@ -6,4 +6,4 @@ EDIT: Right now, the compiled program is out of date. In the coming days I will 
 Dependencies: ```PyQt5 5.13.2``` ```requests```
 <br>
 <hr>
-<br>If you want to contribute to it, feel free to do it ! :)
+If you want to contribute to it, feel free to do it ! :)
