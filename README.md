@@ -1,10 +1,9 @@
 # qExchanger
-I compiled the program for ease of use. To run it, find the .exe in ```./qExchanger``` and execute it
+I compiled the program for ease of use. To run it, find the .exe in ```./qExchanger``` and execute it<br>
 <br>
-<br>If you want to contribute to it, feel free to do it ! :)
+EDIT: Right now, the compiled program is out of date. In the coming days I will compile it to the latest varsion.For latest and greatest, download the source code and run it.<br>
+<br>
+Dependencies: ```PyQt5 5.13.2``` ```requests```
+<br>
 <hr>
-<br>UPDATE 13.8.2019: New version of qExchanger is released. It features a brand new About tab
-<br>
-<br>UPDATE 16.8.2019: This update features a lot of new currencies supported (Russian ruble, Norwegian krone, etc.)
-<br>
-<br>UPDATE 2.9.2019: This update mainly features back-end code improvement. Nearly the whole program was rewritten: Now there is only one cycle/loop per execution. It is possible to download the Rates manually.
+<br>If you want to contribute to it, feel free to do it ! :)
