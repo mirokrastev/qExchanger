@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>292</width>
-    <height>406</height>
+    <width>290</width>
+    <height>370</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>qExchanger</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="icons.qrc">
+   <iconset>
     <normaloff>:/images/snimki/icons8_estimate_96_H72_icon.ico</normaloff>:/images/snimki/icons8_estimate_96_H72_icon.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -74,7 +74,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/btc-512.png</normaloff>:/images/snimki/btc-512.png</iconset>
+                <normaloff>:/misc/images/misc/btc-512.png</normaloff>:/misc/images/misc/btc-512.png</iconset>
               </property>
              </item>
             </widget>
@@ -103,9 +103,9 @@
          </spacer>
         </item>
         <item row="0" column="1">
-         <widget class="QPushButton" name="exchange_2">
+         <widget class="QPushButton" name="btc_rates_btn">
           <property name="text">
-           <string>Exchange</string>
+           <string>Rates</string>
           </property>
          </widget>
         </item>
@@ -139,20 +139,20 @@
             <widget class="QComboBox" name="secondC_2">
              <item>
               <property name="text">
-               <string>USD</string>
-              </property>
-              <property name="icon">
-               <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/1280px-Flag_of_the_United_States.svg.png</normaloff>:/images/snimki/1280px-Flag_of_the_United_States.svg.png</iconset>
-              </property>
-             </item>
-             <item>
-              <property name="text">
                <string>EUR</string>
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/eu-flag-png-download-pngwebpjpg-600.png</normaloff>:/images/snimki/eu-flag-png-download-pngwebpjpg-600.png</iconset>
+                <normaloff>:/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png</normaloff>:/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>USD</string>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/flags/images/flags/1280px-Flag_of_the_United_States.svg.png</normaloff>:/flags/images/flags/1280px-Flag_of_the_United_States.svg.png</iconset>
               </property>
              </item>
              <item>
@@ -161,7 +161,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/flag-400.png</normaloff>:/images/snimki/flag-400.png</iconset>
+                <normaloff>:/flags/images/flags/flag-400.png</normaloff>:/flags/images/flags/flag-400.png</iconset>
               </property>
              </item>
              <item>
@@ -170,7 +170,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/russia-400.png</normaloff>:/images/snimki/russia-400.png</iconset>
+                <normaloff>:/flags/images/flags/russia-400.png</normaloff>:/flags/images/flags/russia-400.png</iconset>
               </property>
              </item>
              <item>
@@ -179,7 +179,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/Flag_of_India.png</normaloff>:/images/snimki/Flag_of_India.png</iconset>
+                <normaloff>:/flags/images/flags/Flag_of_India.png</normaloff>:/flags/images/flags/Flag_of_India.png</iconset>
               </property>
              </item>
             </widget>
@@ -233,7 +233,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/eu-flag-png-download-pngwebpjpg-600.png</normaloff>:/images/snimki/eu-flag-png-download-pngwebpjpg-600.png</iconset>
+                <normaloff>:/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png</normaloff>:/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png</iconset>
               </property>
              </item>
              <item>
@@ -242,7 +242,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/1280px-Flag_of_the_United_States.svg.png</normaloff>:/images/snimki/1280px-Flag_of_the_United_States.svg.png</iconset>
+                <normaloff>:/flags/images/flags/1280px-Flag_of_the_United_States.svg.png</normaloff>:/flags/images/flags/1280px-Flag_of_the_United_States.svg.png</iconset>
               </property>
              </item>
              <item>
@@ -251,7 +251,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/flag-400.png</normaloff>:/images/snimki/flag-400.png</iconset>
+                <normaloff>:/flags/images/flags/flag-400.png</normaloff>:/flags/images/flags/flag-400.png</iconset>
               </property>
              </item>
              <item>
@@ -260,7 +260,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/russia-400.png</normaloff>:/images/snimki/russia-400.png</iconset>
+                <normaloff>:/flags/images/flags/russia-400.png</normaloff>:/flags/images/flags/russia-400.png</iconset>
               </property>
              </item>
              <item>
@@ -269,7 +269,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/1280px-Flag_of_Croatia.svg.png</normaloff>:/images/snimki/1280px-Flag_of_Croatia.svg.png</iconset>
+                <normaloff>:/flags/images/flags/1280px-Flag_of_Croatia.svg.png</normaloff>:/flags/images/flags/1280px-Flag_of_Croatia.svg.png</iconset>
               </property>
              </item>
              <item>
@@ -278,7 +278,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/Flag_of_India.png</normaloff>:/images/snimki/Flag_of_India.png</iconset>
+                <normaloff>:/flags/images/flags/Flag_of_India.png</normaloff>:/flags/images/flags/Flag_of_India.png</iconset>
               </property>
              </item>
              <item>
@@ -287,7 +287,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/norway-400.png</normaloff>:/images/snimki/norway-400.png</iconset>
+                <normaloff>:/flags/images/flags/norway-400.png</normaloff>:/flags/images/flags/norway-400.png</iconset>
               </property>
              </item>
              <item>
@@ -296,7 +296,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/poland-400.png</normaloff>:/images/snimki/poland-400.png</iconset>
+                <normaloff>:/flags/images/flags/poland-400.png</normaloff>:/flags/images/flags/poland-400.png</iconset>
               </property>
              </item>
              <item>
@@ -305,7 +305,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/turkey-400.png</normaloff>:/images/snimki/turkey-400.png</iconset>
+                <normaloff>:/flags/images/flags/turkey-400.png</normaloff>:/flags/images/flags/turkey-400.png</iconset>
               </property>
              </item>
             </widget>
@@ -372,22 +372,25 @@
           <layout class="QGridLayout" name="gridLayout">
            <item row="0" column="0">
             <widget class="QComboBox" name="secondC">
-             <item>
-              <property name="text">
-               <string>USD</string>
-              </property>
-              <property name="icon">
-               <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/1280px-Flag_of_the_United_States.svg.png</normaloff>:/images/snimki/1280px-Flag_of_the_United_States.svg.png</iconset>
-              </property>
-             </item>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
              <item>
               <property name="text">
                <string>EUR</string>
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/eu-flag-png-download-pngwebpjpg-600.png</normaloff>:/images/snimki/eu-flag-png-download-pngwebpjpg-600.png</iconset>
+                <normaloff>:/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png</normaloff>:/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>USD</string>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/flags/images/flags/1280px-Flag_of_the_United_States.svg.png</normaloff>:/flags/images/flags/1280px-Flag_of_the_United_States.svg.png</iconset>
               </property>
              </item>
              <item>
@@ -396,7 +399,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/flag-400.png</normaloff>:/images/snimki/flag-400.png</iconset>
+                <normaloff>:/flags/images/flags/flag-400.png</normaloff>:/flags/images/flags/flag-400.png</iconset>
               </property>
              </item>
              <item>
@@ -405,7 +408,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/russia-400.png</normaloff>:/images/snimki/russia-400.png</iconset>
+                <normaloff>:/flags/images/flags/russia-400.png</normaloff>:/flags/images/flags/russia-400.png</iconset>
               </property>
              </item>
              <item>
@@ -414,7 +417,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/1280px-Flag_of_Croatia.svg.png</normaloff>:/images/snimki/1280px-Flag_of_Croatia.svg.png</iconset>
+                <normaloff>:/flags/images/flags/1280px-Flag_of_Croatia.svg.png</normaloff>:/flags/images/flags/1280px-Flag_of_Croatia.svg.png</iconset>
               </property>
              </item>
              <item>
@@ -423,7 +426,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/Flag_of_India.png</normaloff>:/images/snimki/Flag_of_India.png</iconset>
+                <normaloff>:/flags/images/flags/Flag_of_India.png</normaloff>:/flags/images/flags/Flag_of_India.png</iconset>
               </property>
              </item>
              <item>
@@ -432,7 +435,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/norway-400.png</normaloff>:/images/snimki/norway-400.png</iconset>
+                <normaloff>:/flags/images/flags/norway-400.png</normaloff>:/flags/images/flags/norway-400.png</iconset>
               </property>
              </item>
              <item>
@@ -441,7 +444,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/poland-400.png</normaloff>:/images/snimki/poland-400.png</iconset>
+                <normaloff>:/flags/images/flags/poland-400.png</normaloff>:/flags/images/flags/poland-400.png</iconset>
               </property>
              </item>
              <item>
@@ -450,7 +453,7 @@
               </property>
               <property name="icon">
                <iconset resource="icons.qrc">
-                <normaloff>:/images/snimki/turkey-400.png</normaloff>:/images/snimki/turkey-400.png</iconset>
+                <normaloff>:/flags/images/flags/turkey-400.png</normaloff>:/flags/images/flags/turkey-400.png</iconset>
               </property>
              </item>
             </widget>
@@ -489,7 +492,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>292</width>
+     <width>290</width>
      <height>21</height>
     </rect>
    </property>
@@ -506,7 +509,6 @@
      <addaction name="actionDot"/>
      <addaction name="actionComma"/>
     </widget>
-    <addaction name="themes"/>
     <addaction name="btc"/>
     <addaction name="separator"/>
     <addaction name="menuSeparator"/>

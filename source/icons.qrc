@@ -1,18 +1,21 @@
 <RCC>
-  <qresource prefix="images">
-    <file>snimki/1280px-Flag_of_Croatia.svg.png</file>
-    <file>snimki/Flag_of_India.png</file>
-    <file>snimki/norway-400.png</file>
-    <file>snimki/poland-400.png</file>
-    <file>snimki/russia-400.png</file>
-    <file>snimki/turkey-400.png</file>
-    <file>snimki/gplv3-with-text-136x68.png</file>
-    <file>snimki/kisspng-qt-creator-qt-quick-the-qt-company-posted-write-5b1b6b4ccbb114.1843493915285235968343.png</file>
-    <file>snimki/icons8-color-96.png</file>
-    <file>snimki/icons8_estimate_96_H72_icon.ico</file>
-    <file>snimki/flag-400.png</file>
-    <file>snimki/eu-flag-png-download-pngwebpjpg-600.png</file>
-    <file>snimki/1280px-Flag_of_the_United_States.svg.png</file>
-    <file>snimki/btc-512.png</file>
+  <qresource prefix="flags">
+    <file>images/flags/eu-flag-png-download-pngwebpjpg-600.png</file>
+    <file>images/flags/Flag_of_India.png</file>
+    <file>images/flags/1280px-Flag_of_Croatia.svg.png</file>
+    <file>images/flags/flag-400.png</file>
+    <file>images/flags/norway-400.png</file>
+    <file>images/flags/poland-400.png</file>
+    <file>images/flags/russia-400.png</file>
+    <file>images/flags/turkey-400.png</file>
+    <file>images/flags/1280px-Flag_of_the_United_States.svg.png</file>
+  </qresource>
+  <qresource prefix="misc">
+    <file>images/misc/btc-512.png</file>
+    <file>images/misc/dollar.gif</file>
+    <file>images/misc/gplv3-with-text-136x68.png</file>
+    <file>images/misc/icons8_estimate_96_H72_icon.ico</file>
+    <file>images/misc/icons8-color-96.png</file>
+    <file>images/misc/kisspng-qt-creator-qt-quick-the-qt-company-posted-write-5b1b6b4ccbb114.1843493915285235968343.png</file>
   </qresource>
 </RCC>

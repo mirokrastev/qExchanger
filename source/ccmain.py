@@ -2,9 +2,10 @@
 
 # Form implementation generated from reading ui file 'ccmain.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.1
+# Created by: PyQt5 UI code generator 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
+
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -12,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(292, 406)
+        MainWindow.resize(290, 370)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/images/snimki/icons8_estimate_96_H72_icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -43,7 +44,7 @@ class Ui_MainWindow(object):
         self.firstC_2 = QtWidgets.QComboBox(self.frame_5)
         self.firstC_2.setObjectName("firstC_2")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/images/snimki/btc-512.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(":/misc/images/misc/btc-512.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.firstC_2.addItem(icon1, "")
         self.gridLayout_7.addWidget(self.firstC_2, 0, 0, 1, 1)
         self.firstCINP_2 = QtWidgets.QLineEdit(self.frame_5)
@@ -55,9 +56,9 @@ class Ui_MainWindow(object):
         self.gridLayout_8.setObjectName("gridLayout_8")
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_8.addItem(spacerItem, 0, 0, 1, 1)
-        self.exchange_2 = QtWidgets.QPushButton(self.frame_8)
-        self.exchange_2.setObjectName("exchange_2")
-        self.gridLayout_8.addWidget(self.exchange_2, 0, 1, 1, 1)
+        self.btc_rates_btn = QtWidgets.QPushButton(self.frame_8)
+        self.btc_rates_btn.setObjectName("btc_rates_btn")
+        self.gridLayout_8.addWidget(self.btc_rates_btn, 0, 1, 1, 1)
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_8.addItem(spacerItem1, 0, 2, 1, 1)
         self.gridLayout_11.addLayout(self.gridLayout_8, 1, 0, 1, 1)
@@ -72,19 +73,19 @@ class Ui_MainWindow(object):
         self.secondC_2 = QtWidgets.QComboBox(self.frame_7)
         self.secondC_2.setObjectName("secondC_2")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/images/snimki/1280px-Flag_of_the_United_States.svg.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(":/flags/images/flags/eu-flag-png-download-pngwebpjpg-600.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.secondC_2.addItem(icon2, "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/images/snimki/eu-flag-png-download-pngwebpjpg-600.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap(":/flags/images/flags/1280px-Flag_of_the_United_States.svg.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.secondC_2.addItem(icon3, "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/images/snimki/flag-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap(":/flags/images/flags/flag-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.secondC_2.addItem(icon4, "")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/images/snimki/russia-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap(":/flags/images/flags/russia-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.secondC_2.addItem(icon5, "")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/images/snimki/Flag_of_India.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap(":/flags/images/flags/Flag_of_India.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.secondC_2.addItem(icon6, "")
         self.gridLayout_10.addWidget(self.secondC_2, 0, 0, 1, 1)
         self.secondCOUT_2 = QtWidgets.QLineEdit(self.frame_7)
@@ -110,22 +111,22 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.firstC = QtWidgets.QComboBox(self.frame_2)
         self.firstC.setObjectName("firstC")
-        self.firstC.addItem(icon3, "")
         self.firstC.addItem(icon2, "")
+        self.firstC.addItem(icon3, "")
         self.firstC.addItem(icon4, "")
         self.firstC.addItem(icon5, "")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/images/snimki/1280px-Flag_of_Croatia.svg.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap(":/flags/images/flags/1280px-Flag_of_Croatia.svg.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.firstC.addItem(icon7, "")
         self.firstC.addItem(icon6, "")
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/images/snimki/norway-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap(":/flags/images/flags/norway-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.firstC.addItem(icon8, "")
         icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap(":/images/snimki/poland-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon9.addPixmap(QtGui.QPixmap(":/flags/images/flags/poland-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.firstC.addItem(icon9, "")
         icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap(":/images/snimki/turkey-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon10.addPixmap(QtGui.QPixmap(":/flags/images/flags/turkey-400.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.firstC.addItem(icon10, "")
         self.gridLayout_2.addWidget(self.firstC, 0, 0, 1, 1)
         self.firstCINP = QtWidgets.QLineEdit(self.frame_2)
@@ -177,7 +178,7 @@ class Ui_MainWindow(object):
         self.line.setObjectName("line")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 292, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 290, 21))
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
@@ -218,7 +219,6 @@ class Ui_MainWindow(object):
         self.menuSeparator.addSeparator()
         self.menuSeparator.addAction(self.actionDot)
         self.menuSeparator.addAction(self.actionComma)
-        self.menuFile.addAction(self.themes)
         self.menuFile.addAction(self.btc)
         self.menuFile.addSeparator()
         self.menuFile.addAction(self.menuSeparator.menuAction())
@@ -231,6 +231,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuHelp.menuAction())
 
         self.retranslateUi(MainWindow)
+        self.secondC.setCurrentIndex(1)
         self.exit.triggered.connect(MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -238,9 +239,9 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "qExchanger"))
         self.firstC_2.setItemText(0, _translate("MainWindow", "BTC"))
-        self.exchange_2.setText(_translate("MainWindow", "Exchange"))
-        self.secondC_2.setItemText(0, _translate("MainWindow", "USD"))
-        self.secondC_2.setItemText(1, _translate("MainWindow", "EUR"))
+        self.btc_rates_btn.setText(_translate("MainWindow", "Rates"))
+        self.secondC_2.setItemText(0, _translate("MainWindow", "EUR"))
+        self.secondC_2.setItemText(1, _translate("MainWindow", "USD"))
         self.secondC_2.setItemText(2, _translate("MainWindow", "BGN"))
         self.secondC_2.setItemText(3, _translate("MainWindow", "RUB"))
         self.secondC_2.setItemText(4, _translate("MainWindow", "INR"))
@@ -254,8 +255,8 @@ class Ui_MainWindow(object):
         self.firstC.setItemText(7, _translate("MainWindow", "PLN"))
         self.firstC.setItemText(8, _translate("MainWindow", "TRY"))
         self.exchange.setText(_translate("MainWindow", "Exchange"))
-        self.secondC.setItemText(0, _translate("MainWindow", "USD"))
-        self.secondC.setItemText(1, _translate("MainWindow", "EUR"))
+        self.secondC.setItemText(0, _translate("MainWindow", "EUR"))
+        self.secondC.setItemText(1, _translate("MainWindow", "USD"))
         self.secondC.setItemText(2, _translate("MainWindow", "BGN"))
         self.secondC.setItemText(3, _translate("MainWindow", "RUB"))
         self.secondC.setItemText(4, _translate("MainWindow", "HRK"))
@@ -277,6 +278,4 @@ class Ui_MainWindow(object):
         self.actionDot.setText(_translate("MainWindow", "Dot"))
         self.actionComma.setText(_translate("MainWindow", "Comma"))
         self.actionRates.setText(_translate("MainWindow", "Rates"))
-
-
 import icons_rc
